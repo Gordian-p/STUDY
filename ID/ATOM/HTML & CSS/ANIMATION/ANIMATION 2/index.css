@@ -1,0 +1,59 @@
+body{
+  background: #333;
+}
+.box{
+   height: 200px;
+   width: 200px;
+   background: white;
+   position: relative;
+
+   /* animation */
+
+   animation-name: animation;
+   animation-duration: 4s;
+   animation-iteration-count: 3;  /* NOTE it will go for 3 times */
+   /* animation-iteration-count: infinite;  /* NOTE: it will keep going */
+   animation-delay: 2s;  /* NOTE: it will wait 2s and begin */
+
+
+   /* animation-direction: reverse;  /* NOTE: it will reverse the animation */
+   /* animation-direction: alternate;  /* NOTE: it will go clockwise and then anticlockwise */
+   /* animation-direction: alternate-reverse;   /* NOTE: it will go anticlockwise and the clockwise and vice versa*/
+
+   animation-timing-function: ease-in;
+
+   animation-fill-mode: forwards; /* NOTE: this wil make the end of the animation to stay at it is */
+   /* animation-fill-mode: backwards; */ /* NOTE: this will make the animation to as it was */
+}
+@keyframes animation{
+    0%{
+      background: white;
+      left: 0px;
+      top: 0px;
+      border-radius: 0 0 0 0;
+    }
+    25%{
+      background: red;
+      left: 400px;
+      top: 0px;
+      border-radius: 50% 0 0 0;
+    }
+    50%{
+      background: blue;
+      left: 400px;
+      top: 200px;
+      border-radius: 0 0 50% 0;
+    }
+    75%{
+      background: yellow;
+      left: 0px;
+      top: 200px;
+      border-radius: 0 50% 0 50%;
+    }
+    100%{
+      background: white;
+      left: 0px;
+      top: 0px;
+      border-radius: 50% 50% 50% 50%;
+    }
+}

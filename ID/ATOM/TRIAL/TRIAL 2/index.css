@@ -1,0 +1,19 @@
+body{
+  background: lightblue;
+}
+
+button{
+  padding: 10px 15px;
+  margin-bottom: 100px;
+}
+button:hover{
+  cursor: pointer;
+}
+div{
+  height: 200px;
+  width: 200px;
+  background: orange;
+  margin: 0px auto;
+  position: relative;
+  transition: 0.5s;
+}

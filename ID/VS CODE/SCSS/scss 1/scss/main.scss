@@ -1,0 +1,224 @@
+@import 'partial/resert';
+@import 'partial/variable';
+
+
+ 
+
+
+// NOTE (_) THIS SYMBOL MEANS THE SCSS COMPILER TO IGNORE THE CONTAIN SCSS FILE
+
+body{
+    background: $primary-color;
+    font-weight: map-get($font-wiegth, bold);
+}
+.container{
+     background: map-get($font-color, color-two);
+     color: map-get($font-color, color-three);
+
+}
+
+/* *** NESTING *** */ 
+
+/* --- EXMPLE 1 --- */
+.main{
+    width: 80%;
+    margin: 0 auto;
+
+  p{                                           // OR //
+        // color: $secondary-color;   
+       
+    }
+}
+
+
+/* --- EXMPLE 2 --- */
+.main{
+    width: 80%;
+    margin: 0 auto;
+
+//    .main-paragraph{                           // OR //
+//         color: $secondary-color;               
+//     }
+
+
+/* NOTE this (&) symbol represent parent element */ 
+
+//    &-paragraph{                               
+//         color: $secondary-color;
+//    }
+
+
+    /* ENTERPULATION METHOD*/
+   #{&}-paragraph{                               // OR //
+    color: $secondary-color;
+
+    &:hover{
+        color:map-get($font-color, color-three);
+    }
+}
+
+&:hover{
+    background:blue;
+}
+}
+
+
+
+/* **** FUNCTION **** */
+
+@function size ($key) {
+     @return map-get($font-size,$key);
+}
+
+.last{
+    background: yellow;
+    font-size: size(three);
+}
+
+
+
+/* *****  MIXING ****  */ 
+
+/* ----- EXMPLE 1 --- */
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div{
+    @include flex;
+    height: 30vh;
+    border: 2px solid black;
+
+    p{
+        width: 200px;
+    }
+}
+
+/* --- EXMPLE 2 ---- */
+
+@mixin flex-2 ($display,$direction) {
+    display: $display;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+.div-copy{
+     @include flex-2 (flex,rows);
+     height: 30vh;
+     border: 2px dotted black;
+
+     p{
+         width: 200px;
+     }
+}
+
+/* ---- EXMPLE 3 ---- */
+
+@mixin theme($light-theme : true){
+     @if $light-theme {
+         background : lighten($primary-color,40%);
+         color: darken($secondary-color,100%);
+     }
+}
+body.theme {
+    @include theme(true);
+    // @include theme($light-theme : true);
+}
+
+/* ---- EXMPLE 4 ---- */
+
+@mixin div($style : true) {
+          // OR //
+    //  @if $style = true{
+
+    //  }
+     @if $style {
+         background: blue;
+         color: black;
+         height: 30vh;
+         @include flex;
+     }
+     @else{
+        background: rgb(0, 255, 255);
+        color: black;
+        height: 30vh;
+        @include flex;
+     }
+}
+div.end{
+    @include div(true);
+    margin-top: 50px;
+
+    p{
+        margin: 0px 30px;
+    }
+}
+
+
+div.end-2{
+    @include div(false);
+    margin-top: 50px;
+
+    p{
+        margin: 0px 30px;
+    }
+
+    &:hover{
+        background: rgba(0, 255, 255,.3);
+    }
+}
+
+
+// --- EXMPLE 5 --- //
+
+@mixin last ($style){
+    @if $style = 'true' {
+        background :yellow;
+        font-family: sans-serif;
+        font-size: 30px;
+    }
+    
+}
+div.end-3{
+    @include flex;
+    @include last(true);
+    margin-top: 50px;
+
+    p{
+        margin: 0px 30px;
+    }
+}
+
+// -------------------- //
+/* NOTE if u use two equal siqn == the value will be cluded with it string*/
+/*
+@mixin last ($style){
+    @if $style == 'true' {
+        background :yellow;
+        font-family: sans-serif;
+        font-size: 30px;
+    }
+    
+}
+div.end-3{
+    @include flex;
+    @include last(true);
+    margin-top: 50px;
+
+    p{
+        margin: 0px 30px;
+    }
+}
+*/
+
+
+/* ****** EXTEND ***** */
+
+div.end-4{
+    @extend div.end-3;
+    // NOTE IF U WANT CHANGES YOU CAN MAKE IT
+    background: red;
+}

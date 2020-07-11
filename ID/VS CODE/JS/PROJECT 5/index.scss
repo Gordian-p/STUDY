@@ -1,0 +1,55 @@
+*,*::before,*::after{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to top left, blue ,red);
+    display: grid;
+    place-items: center;
+
+    .container{
+
+        #input{
+            input{
+                padding:10px 80px 10px 05px;
+                outline: none;
+            }
+        }
+
+        #math{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,50px);
+            grid-gap: 5px;
+
+            margin-top: 7px;
+            
+
+            p{
+                background: rgb(70, 67, 67);
+                color: white;
+                display: grid;
+                place-items: center;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            #equal{
+                grid-column: 4 / -1;
+                grid-row: 4 / 6;
+            }
+            #zero{
+                grid-column: 1 / 3;
+            }
+        }
+    }
+}

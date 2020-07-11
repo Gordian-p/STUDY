@@ -1,0 +1,41 @@
+body{
+   margin: 100px;
+}
+.box{
+   height: 200px;
+   width: 200px;
+   background: #3DCCC7;
+}
+
+
+.box{
+  /* NOTE 1s = 1000ms */
+
+  transition-duration: 1s;
+
+  transition-property: background,transform,width,padding;
+  transition-property: all;
+  /* NOTE AVOID USING OF ALL THIS MAY CAUSE TO SLOW ANIMATION TO A BUDGET SELL PHONE */
+  transition-timing-function: linear;
+  transition-delay: 2s;
+
+
+
+  /* NOTE ALWAYS THE SECOND NOMBER IS THE DELAY */
+  /* NOTE U CAN ARRANGE ANYWAY U WANT */
+  transition: all 1s ease-in 2s;
+
+  /* NOTE IT START TRANSITION BACKGROUND THEN TRANSFORM AND FINALLY WIDTH */
+  transition: background 1s ease-out, transform 1s 1s,width 2s 2s;
+
+}
+html:hover .box{
+    transform: rotateZ(20deg) translateX(200px);
+    background: red;
+    width: 250px;
+    padding: 1em;
+}
+/* .box:hover{
+  background: red;
+  cursor: pointer;
+} */

@@ -1,0 +1,21 @@
+div{
+  width: 300px;
+  padding: 14px 0px;
+  text-align: center;
+  font-size: 30px;
+}
+div:hover{
+  cursor: pointer;
+}
+div ~ div{
+  margin-top: 10px;
+}
+div:nth-child(1){
+  background: green;
+}
+div:nth-child(2){
+  background: lightblue;
+}
+div:nth-child(3){
+  background: orange;
+}

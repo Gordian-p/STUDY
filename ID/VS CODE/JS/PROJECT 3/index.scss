@@ -1,0 +1,54 @@
+*,*::before,*::after{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100vh;
+}
+body{
+    background: rgb(26, 25, 25);
+}
+
+.container{
+    max-width: 400px;
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    top: 40px;
+
+    h2{
+        color: white;
+        font-size: 50px;
+        font-weight: lighter;
+        text-align: center;
+    }
+    input{
+        width: 100%;
+        padding: 7px 15px;
+    }
+    div:nth-child(3),div:nth-child(4),div:nth-child(5){
+        display: none;
+        p{
+            color: white;
+            margin-bottom: 5px;
+        }
+        h4{
+            color: white;
+        }
+    }
+    div:nth-child(3){
+        background: rgb(19, 19, 221);
+        padding: 13px 15px;
+    }
+    div:nth-child(4){
+        background: rgb(39, 216, 39);
+        padding: 13px 15px;
+    }
+    div:nth-child(5){
+        background: rgb(168, 2, 2);
+        padding: 13px 15px;
+    }
+    
+}

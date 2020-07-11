@@ -1,0 +1,26 @@
+nav{
+   display: flex;
+}
+.home{
+    flex: 1 5 300px;
+    /* flex-grow: 1; */
+    flex-shrink: 5;
+    flex-basis: 300px;
+}
+.logout{
+   flex: 5 1 300px;
+  /* flex-grow: 5; */
+  flex-shrink: 1;
+  flex-basis: 300px;   /* base width*/
+
+}
+    /* flex-grow , flex-shrink , flex-basis */
+
+
+
+p{
+    flex: 1 1 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}

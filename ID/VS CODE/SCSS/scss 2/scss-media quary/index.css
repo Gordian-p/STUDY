@@ -1,0 +1,77 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(red), to(blue));
+  background-image: linear-gradient(to top left, red, blue);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  width: 300px;
+  background: #ffffff;
+}
+
+div input[type="text"], div input[type="password"] {
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #cecccc;
+}
+
+div button {
+  margin-top: 30px;
+  padding: 3px 60px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  div {
+    background: yellow;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  div {
+    background: orange;
+  }
+}
+/*# sourceMappingURL=index.css.map */

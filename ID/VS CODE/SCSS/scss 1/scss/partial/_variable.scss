@@ -1,0 +1,24 @@
+ /* ***** VARIABLE **** */
+ $primary-color: orange;
+ $secondary-color: blue;
+
+ 
+ /* *** MAPS *** */
+ $font-wiegth: (
+       "regular" : 400,
+       "medium" : 500,
+       "bold" : 'black'
+  ); 
+
+  $font-color: (
+   "color-one" : blue,
+   "color-two" : green,
+   "color-three" : white
+  );
+
+
+  $font-size: (
+        'one' : 20px,
+        'two' : 30px,
+        'three' : 40px
+  )

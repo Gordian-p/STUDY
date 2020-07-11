@@ -1,0 +1,41 @@
+body{
+   height: 100vh;
+   display: grid;
+   place-items: center;
+   background: #222;
+   perspective: 700px; /* we use perspective here because all the container are child of the body */
+}
+.card{
+  height: 340px;
+  width: 250px;
+  position: relative;
+  transition: all 1s;
+  transform-style: preserve-3d;  /* --- NOTE --- */
+}
+.front,.back{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  font-family: monospace;
+  border-radius: 10px;
+  position: absolute;
+}
+.front{
+  background: linear-gradient(#08aeea,#2af598);
+  /* z-index: 2; */
+  backface-visibility: hidden; /* --- NOTE --- */
+}
+.back{
+  background: linear-gradient(#f8da61,#ff5acd);
+  /* z-index: 1; */
+  transform: rotateY(180deg);
+}
+
+.container{
+   /* perspective: 700px; */
+}
+html:hover .card{
+    transform: rotateY(180deg);
+}

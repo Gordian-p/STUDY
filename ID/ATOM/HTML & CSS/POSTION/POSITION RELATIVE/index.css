@@ -1,0 +1,29 @@
+html{
+  background: #fa923f;
+  padding: 10px;
+}
+body{
+  background: yellow;
+  padding: 10px;
+  margin: 0;
+  position: relative;
+}
+
+header{
+  background: #f073e1;
+  position: absolute;
+  left:0;
+  top: 0;
+}
+
+/* NOTe by position relative u can position an element without affecting other element */
+nav{
+  background: #f073e1;
+  margin: 10px;
+  position: relative;
+  top: 100px;
+}
+footer{
+  background: #f073e1;
+  margin: 10px;
+}

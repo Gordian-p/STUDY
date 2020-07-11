@@ -1,0 +1,78 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background: #111;
+  color: white;
+}
+
+section:nth-child(odd){
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /*
+    fixed = parallax;
+    scroll = normal;
+   */
+
+  background-attachment: fixed;
+}
+
+.one {
+   display: grid;
+   place-items: center;
+   background: url('1.jpg');
+   width: 100%;
+   height: 400px;
+   color: white;
+}
+
+.two{
+  display: grid;
+  place-items: center;
+  text-align: justify;
+  margin: 0px 50px;
+}
+
+.three {
+   display: grid;
+   place-items: center;
+   background: url('2.jpg');
+   width: 100%;
+   height: 400px;
+   color: white;
+   background-attachment: scroll;
+
+}
+
+.four{
+  display: grid;
+  place-items: center;
+  text-align: justify;
+  margin: 0px 50px;
+}
+
+.five {
+   background: url('3.jpg');
+   width: 100%;
+   height: 400px;
+   color: white;
+   z-index: -1;
+   position: relative;
+}
+
+.five div{
+  display: grid;
+  place-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+
+}
+.six{
+  display: grid;
+  place-items: center;
+  text-align: justify;
+  margin: 0px 50px;
+}

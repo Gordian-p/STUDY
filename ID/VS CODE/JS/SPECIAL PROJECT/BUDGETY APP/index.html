@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+<body>
+    <!-- SECTION-1 -->
+    <section class="section-one">
+        <div class="background">
+             <div class="budjet">
+                  <p>Available Budget in September 2020:</p>
+                  <h2>+ <span class="total">0.00</h2>
+                  <p class="income">
+                      <span>INCOME</span>
+                      <span class="income-number">+ <span id="income-number">0</span>.00</span>
+                  </p>
+                  <p class="expenses">
+                        <span>EXPENSES</span>
+                        <span class="expenses-number">- 0.00</span>
+                        <span class="total-percentage">0%</span>
+                  </p>
+             </div>
+        </div>
+    </section>
+
+    <!-- SECTION-2 -->
+    <section class="section-two">
+        <div class="description">
+           <select class="select">
+               <option value="+">+</option>
+               <option value="-">-</option>
+           </select>
+           <input type="text" placeholder="Add description" class="text">
+           <input type="number" placeholder="value" class="number">  
+           <div class="add-Btn">
+              <img src="IMG/add.png">
+           </div> 
+        </div>
+    </section>
+
+    <!-- SECTION-3 -->
+    <section class="section-three">
+      <div class="container">
+         <div class="income-list">
+              <p class="p-income">INCOME</p>
+              <ul id="income">
+                 <!-- <li class="li-income">
+                      <span class="income-item">Web Project</span>
+                      <span class="income-price">+250.00</span>
+                      <span class="income-close"><span>+</span></span>
+                 </li> -->
+              </ul>
+         </div>
+
+         <div class="expenses-list">
+                <p class="p-expenses">EXPENSES</p>
+                <ul id="expenses">
+                   <!-- <li class="li-expenses">
+                        <span class="expenses-item">Web Project</span>
+                        <span class="expenses-price">250.00</span>
+                        <span class="expenses-percent">100%</span>
+                        <span class="expenses-close"><span>+</span></span>
+                   </li> -->
+                </ul>
+           </div>
+        </div>
+    </section>
+</body>
+<script src="app.js"></script>
+</html>

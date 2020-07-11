@@ -1,0 +1,990 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background: rgba(240, 240, 240, 0.5);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* ******************** HEADER ************************ */
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+header div.top {
+  background: #a5c926;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header div.top ul:nth-child(2) {
+  margin-left: auto;
+  margin-right: 100px;
+  padding-top: 3px;
+}
+
+header div.top ul:nth-child(2) li {
+  display: inline;
+}
+
+header div.top ul:nth-child(2) li img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 20px;
+  padding: 5px;
+}
+
+header div.top ul:nth-child(2) li img:hover {
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+header div.top ul:nth-child(1) {
+  padding: 5px 0px 5px 0;
+  margin-left: 90px;
+}
+
+header div.top ul:nth-child(1) li {
+  display: inline;
+  font-size: 12.2px;
+  color: #ffffff;
+}
+
+header div.top ul:nth-child(1) li:nth-child(1) {
+  margin-right: 7px;
+}
+
+header div.top ul:nth-child(1) li:nth-child(2) a {
+  color: #ffffff;
+}
+
+header div.nav-bar {
+  background: #ffffff;
+  padding: 8px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  /* ***************************  THE END OF HEADING ************************* */
+}
+
+header div.nav-bar ul li {
+  display: inline;
+}
+
+header div.nav-bar ul:nth-child(2) {
+  margin-left: auto;
+  margin-right: 100px;
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: row;
+}
+
+header div.nav-bar ul:nth-child(2) li {
+  margin-right: 5px;
+}
+
+header div.nav-bar ul:nth-child(2) li:nth-child(2) img {
+  width: 30px;
+}
+
+header div.nav-bar ul:nth-child(2) li:nth-child(3) {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #a5c926;
+  color: #a5c926;
+}
+
+header div.nav-bar ul:nth-child(2):hover {
+  cursor: pointer;
+}
+
+header div.nav-bar ul:nth-child(1) {
+  margin-left: 85px;
+}
+
+header div.nav-bar ul:nth-child(1) li + li {
+  margin-left: 3em;
+}
+
+header div.nav-bar ul:nth-child(1) li:nth-child(1) a {
+  font-size: 25px;
+}
+
+header div.nav-bar ul:nth-child(1) li:nth-child(1) a:hover {
+  cursor: default;
+}
+
+header div.nav-bar ul:nth-child(1) li:hover {
+  text-decoration: underline;
+}
+
+header div.nav-bar ul:nth-child(1) li:nth-child(1):hover {
+  text-decoration: none;
+}
+
+/* ************************** MAIN ********************** */
+main, footer.footer div.min-footer {
+  margin: 0px 100px;
+  /*  ***************  THE END OF THE MAIN BODY ********************* */
+}
+
+main section.section-1, footer.footer div.min-footer section.section-1 {
+  height: 510px;
+  margin: 0px -100px;
+  background: url("../../IMAGES/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.section-1 div.intro, footer.footer div.min-footer section.section-1 div.intro {
+  margin: 0px auto;
+  width: 45%;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 15px;
+  height: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.section-1 p, footer.footer div.min-footer section.section-1 p {
+  color: #a5c926;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+main section.section-1 h2, footer.footer div.min-footer section.section-1 h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+main section.section-1 a, footer.footer div.min-footer section.section-1 a {
+  background: #a5c926;
+  border-radius: 30px;
+  padding: 10px 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 13px;
+}
+
+main section.section-1 a:hover, footer.footer div.min-footer section.section-1 a:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+main section.down-arrow, footer.footer div.min-footer section.down-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -40px;
+}
+
+main section.down-arrow div.down, footer.footer div.min-footer section.down-arrow div.down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 13px 20px;
+  border-radius: 100%;
+  background: #ffffff;
+}
+
+main section.down-arrow div.down div.div, footer.footer div.min-footer section.down-arrow div.down div.div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 35px;
+  width: 23px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 13px;
+}
+
+main section.down-arrow div.down div.div div, footer.footer div.min-footer section.down-arrow div.down div.div div {
+  background: rgba(0, 0, 0, 0.2);
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  position: relative;
+  -webkit-animation: down-arrow 2s infinite;
+          animation: down-arrow 2s infinite;
+  top: -10px;
+}
+
+@-webkit-keyframes down-arrow {
+  0% {
+    top: -10px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: -10px;
+  }
+}
+
+@keyframes down-arrow {
+  0% {
+    top: -10px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: -10px;
+  }
+}
+
+main section.section-2, footer.footer div.min-footer section.section-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-top: 6rem;
+  width: 100%;
+}
+
+main section.section-2 div, footer.footer div.min-footer section.section-2 div {
+  border-radius: 15px;
+}
+
+main section.section-2 div.div-1, footer.footer div.min-footer section.section-2 div.div-1 {
+  background: #e4980a;
+  padding: 30px 170px 30px 0;
+}
+
+main section.section-2 div.div-1 ul, footer.footer div.min-footer section.section-2 div.div-1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -4rem;
+}
+
+main section.section-2 div.div-1 ul li:nth-child(1), footer.footer div.min-footer section.section-2 div.div-1 ul li:nth-child(1) {
+  height: 200px;
+  width: 200px;
+}
+
+main section.section-2 div.div-1 ul li:nth-child(1) img, footer.footer div.min-footer section.section-2 div.div-1 ul li:nth-child(1) img {
+  height: 100%;
+  width: 100%;
+}
+
+main section.section-2 div.div-1 ul li:nth-child(2), footer.footer div.min-footer section.section-2 div.div-1 ul li:nth-child(2) {
+  margin-top: 5rem;
+  position: relative;
+  left: 40px;
+}
+
+main section.section-2 div.div-1 ul li:nth-child(2) p, footer.footer div.min-footer section.section-2 div.div-1 ul li:nth-child(2) p {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+main section.section-2 div.div-1 ul li:nth-child(2) button, footer.footer div.min-footer section.section-2 div.div-1 ul li:nth-child(2) button {
+  background: #ffffff;
+  padding: 15px 1.5rem;
+  border-radius: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+main section.section-2 div.div-1 ul li:nth-child(2) button:hover, footer.footer div.min-footer section.section-2 div.div-1 ul li:nth-child(2) button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main section.section-2 div.div-2, footer.footer div.min-footer section.section-2 div.div-2 {
+  background: #cf0061;
+  padding: 30px 0px 30px 170px;
+}
+
+main section.section-2 div.div-2 ul, footer.footer div.min-footer section.section-2 div.div-2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -3.7em;
+}
+
+main section.section-2 div.div-2 li:nth-child(1), footer.footer div.min-footer section.section-2 div.div-2 li:nth-child(1) {
+  margin-top: 5rem;
+  position: relative;
+  right: 40px;
+}
+
+main section.section-2 div.div-2 li:nth-child(1) p, footer.footer div.min-footer section.section-2 div.div-2 li:nth-child(1) p {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+main section.section-2 div.div-2 li:nth-child(1) button, footer.footer div.min-footer section.section-2 div.div-2 li:nth-child(1) button {
+  background: #ffffff;
+  padding: 15px 1.5rem;
+  border-radius: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+}
+
+main section.section-2 div.div-2 li:nth-child(1) button:hover, footer.footer div.min-footer section.section-2 div.div-2 li:nth-child(1) button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+main section.section-2 div.div-2 li:nth-child(2), footer.footer div.min-footer section.section-2 div.div-2 li:nth-child(2) {
+  height: 200px;
+  width: 200px;
+}
+
+main section.section-2 div.div-2 li:nth-child(2) img, footer.footer div.min-footer section.section-2 div.div-2 li:nth-child(2) img {
+  height: 100%;
+  width: 100%;
+}
+
+main section.section-3 div.div-1, footer.footer div.min-footer section.section-3 div.div-1, main section.section-4 div.div-1, footer.footer div.min-footer section.section-4 div.div-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 7rem;
+}
+
+main section.section-3 div.div-1 a, footer.footer div.min-footer section.section-3 div.div-1 a, main section.section-4 div.div-1 a, footer.footer div.min-footer section.section-4 div.div-1 a {
+  margin-left: auto;
+}
+
+main section.section-3 div.div-1 h2, footer.footer div.min-footer section.section-3 div.div-1 h2, main section.section-4 div.div-1 h2, footer.footer div.min-footer section.section-4 div.div-1 h2 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+main section.section-3 div.div-2, footer.footer div.min-footer section.section-3 div.div-2, main section.section-4 div.div-2, footer.footer div.min-footer section.section-4 div.div-2 {
+  width: 100%;
+  height: 3px;
+  background: rgba(158, 158, 158, 0.3);
+  margin-top: 1.7rem;
+  border-radius: 5px;
+}
+
+main section.section-3 div.div-2 div, footer.footer div.min-footer section.section-3 div.div-2 div, main section.section-4 div.div-2 div, footer.footer div.min-footer section.section-4 div.div-2 div {
+  width: 10%;
+  height: 3px;
+  background: #a5c926;
+}
+
+main section.section-3 div.div-3, footer.footer div.min-footer section.section-3 div.div-3, main section.section-4 div.div-3, footer.footer div.min-footer section.section-4 div.div-3 {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  grid-auto-rows: 390px;
+}
+
+main section.section-3 div.div-3 a, footer.footer div.min-footer section.section-3 div.div-3 a, main section.section-4 div.div-3 a, footer.footer div.min-footer section.section-4 div.div-3 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.7rem;
+  border: 2px solid black;
+  background: #ffffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid rgba(214, 214, 214, 0.5);
+  border-radius: 20px;
+}
+
+main section.section-3 div.div-3 a:hover, footer.footer div.min-footer section.section-3 div.div-3 a:hover, main section.section-4 div.div-3 a:hover, footer.footer div.min-footer section.section-4 div.div-3 a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 5px 5px 15px rgba(189, 189, 189, 0.3);
+          box-shadow: 5px 5px 15px rgba(189, 189, 189, 0.3);
+}
+
+main section.section-3 div.div-3 div.img-box, footer.footer div.min-footer section.section-3 div.div-3 div.img-box, main section.section-4 div.div-3 div.img-box, footer.footer div.min-footer section.section-4 div.div-3 div.img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #ffffff;
+}
+
+main section.section-3 div.div-3 div.img-box div.img, footer.footer div.min-footer section.section-3 div.div-3 div.img-box div.img, main section.section-4 div.div-3 div.img-box div.img, footer.footer div.min-footer section.section-4 div.div-3 div.img-box div.img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+main section.section-3 div.div-3 div.img-box div.img img, footer.footer div.min-footer section.section-3 div.div-3 div.img-box div.img img, main section.section-4 div.div-3 div.img-box div.img img, footer.footer div.min-footer section.section-4 div.div-3 div.img-box div.img img {
+  height: 100%;
+  width: 100%;
+}
+
+main section.section-3 div.div-3 div.img-box p, footer.footer div.min-footer section.section-3 div.div-3 div.img-box p, main section.section-4 div.div-3 div.img-box p, footer.footer div.min-footer section.section-4 div.div-3 div.img-box p {
+  margin-bottom: 15px;
+}
+
+main section.section-3 div.div-3 div.img-box button, footer.footer div.min-footer section.section-3 div.div-3 div.img-box button, main section.section-4 div.div-3 div.img-box button, footer.footer div.min-footer section.section-4 div.div-3 div.img-box button {
+  border: none;
+  background-color: #a5c926;
+  padding: 5px 6px;
+  border-radius: 15px;
+  color: #ffffff;
+  outline: none;
+}
+
+main section.section-3 div.div-3 div.img-box button:hover, footer.footer div.min-footer section.section-3 div.div-3 div.img-box button:hover, main section.section-4 div.div-3 div.img-box button:hover, footer.footer div.min-footer section.section-4 div.div-3 div.img-box button:hover {
+  cursor: pointer;
+}
+
+main section.section-5, footer.footer div.min-footer section.section-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-size: 100%, 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../IMAGES/13.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../IMAGES/13.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 500px;
+  margin: 0px -100px;
+  margin-top: 6rem;
+  z-index: -1;
+}
+
+main section.section-5 div ul, footer.footer div.min-footer section.section-5 div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 300px;
+  padding-right: 50px;
+}
+
+main section.section-5 div ul li, footer.footer div.min-footer section.section-5 div ul li {
+  margin: 20px 0px;
+  color: #ffffff;
+}
+
+main section.section-5 div ul li:nth-child(2), footer.footer div.min-footer section.section-5 div ul li:nth-child(2) {
+  font-size: 30px;
+}
+
+main section.section-5 div ul li:nth-child(3), footer.footer div.min-footer section.section-5 div ul li:nth-child(3) {
+  text-align: center;
+}
+
+main section.section-5 div ul li:nth-child(4), footer.footer div.min-footer section.section-5 div ul li:nth-child(4) {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main section.section-5 div ul li:nth-child(4):hover, footer.footer div.min-footer section.section-5 div ul li:nth-child(4):hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+main section.section-5 div ul li:nth-child(4) div.button, footer.footer div.min-footer section.section-5 div ul li:nth-child(4) div.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60px;
+  width: 60px;
+  background: red;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  background: #a5c926;
+}
+
+main section.section-5 div ul li:nth-child(4) div.button div, footer.footer div.min-footer section.section-5 div ul li:nth-child(4) div.button div {
+  height: 15px;
+  width: 15px;
+  background: #ffffff;
+  -webkit-clip-path: polygon(52% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(52% 0, 0% 100%, 100% 100%);
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+main section.section-6, footer.footer div.min-footer section.section-6, main section.section-9, footer.footer div.min-footer section.section-9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 6rem;
+}
+
+main section.section-6 p, footer.footer div.min-footer section.section-6 p, main section.section-9 p, footer.footer div.min-footer section.section-9 p {
+  color: #a5c926;
+  margin-bottom: 10px;
+}
+
+main section.section-6 h2, footer.footer div.min-footer section.section-6 h2, main section.section-9 h2, footer.footer div.min-footer section.section-9 h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+main section.section-7, footer.footer div.min-footer section.section-7 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-top: 6rem;
+}
+
+main section.section-7 div:nth-child(1) ul, footer.footer div.min-footer section.section-7 div:nth-child(1) ul {
+  margin-top: 80px;
+}
+
+main section.section-7 div:nth-child(1) ul li, footer.footer div.min-footer section.section-7 div:nth-child(1) ul li {
+  margin-bottom: 30px;
+}
+
+main section.section-7 div:nth-child(1) ul li:nth-child(1) h2, footer.footer div.min-footer section.section-7 div:nth-child(1) ul li:nth-child(1) h2 {
+  font-size: 33px;
+  font-weight: lighter;
+}
+
+main section.section-7 div:nth-child(1) ul li:nth-child(1) h2::after, footer.footer div.min-footer section.section-7 div:nth-child(1) ul li:nth-child(1) h2::after {
+  content: ' ';
+  display: block;
+  height: 2px;
+  width: 60px;
+  margin-top: 30px;
+  background: #a5c926;
+}
+
+main section.section-7 div:nth-child(1) ul li:nth-child(2) p, footer.footer div.min-footer section.section-7 div:nth-child(1) ul li:nth-child(2) p {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+main section.section-7 div:nth-child(1) ul li:nth-child(3), footer.footer div.min-footer section.section-7 div:nth-child(1) ul li:nth-child(3) {
+  margin-top: 50px;
+}
+
+main section.section-7 div:nth-child(1) ul li:nth-child(3) button, footer.footer div.min-footer section.section-7 div:nth-child(1) ul li:nth-child(3) button {
+  background: #a5c926;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+}
+
+main section.section-7 div:nth-child(1) ul li:nth-child(3) button:hover, footer.footer div.min-footer section.section-7 div:nth-child(1) ul li:nth-child(3) button:hover {
+  -webkit-box-shadow: 3px 3px 15px rgba(117, 116, 116, 0.2);
+          box-shadow: 3px 3px 15px rgba(117, 116, 116, 0.2);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+main section.section-7 div:nth-child(2) div img, footer.footer div.min-footer section.section-7 div:nth-child(2) div img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+main section.section-8, footer.footer div.min-footer section.section-8 {
+  margin-top: 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  background: #ffffff;
+  height: 170px;
+  border-radius: 30px;
+}
+
+main section.section-8 div:nth-child(1), footer.footer div.min-footer section.section-8 div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: row;
+}
+
+main section.section-8 div:nth-child(1) div, footer.footer div.min-footer section.section-8 div:nth-child(1) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 70px;
+  width: 70px;
+  background: #a5c926;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+main section.section-8 div:nth-child(1) p, footer.footer div.min-footer section.section-8 div:nth-child(1) p {
+  font-size: 28px;
+  font-weight: lighter;
+  padding-left: 40px;
+}
+
+main section.section-8 div:nth-child(2), footer.footer div.min-footer section.section-8 div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: row;
+}
+
+main section.section-8 div:nth-child(2) input[type="text"], footer.footer div.min-footer section.section-8 div:nth-child(2) input[type="text"] {
+  padding: 10px 3.5rem;
+  border-radius: 30px;
+  outline: none;
+  border: 2px solid rgba(216, 212, 212, 0.3);
+  font-size: 20px;
+  background: rgba(200, 194, 194, 0.1);
+}
+
+main section.section-8 div:nth-child(2) input[type="text"]:focus, footer.footer div.min-footer section.section-8 div:nth-child(2) input[type="text"]:focus {
+  border: 2px solid #a5c926;
+  background: none;
+}
+
+main section.section-8 div:nth-child(2) button, footer.footer div.min-footer section.section-8 div:nth-child(2) button {
+  font-size: 20px;
+  padding: 14px 1.5rem;
+  margin-left: 20px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: #a5c926;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main section.section-8 div:nth-child(2) button:hover, footer.footer div.min-footer section.section-8 div:nth-child(2) button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 2px 1px 10px rgba(85, 82, 82, 0.2);
+          box-shadow: 2px 1px 10px rgba(85, 82, 82, 0.2);
+}
+
+main section.section-10, footer.footer div.min-footer section.section-10 {
+  margin-top: 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+}
+
+main section.section-10 div img, footer.footer div.min-footer section.section-10 div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main section.section-10 div img:hover, footer.footer div.min-footer section.section-10 div img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 1px 2px 15px rgba(160, 160, 160, 0.3);
+          box-shadow: 1px 2px 15px rgba(160, 160, 160, 0.3);
+  cursor: pointer;
+}
+
+main section.section-11, footer.footer div.min-footer section.section-11 {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.section-11 button, footer.footer div.min-footer section.section-11 button {
+  padding: 17px 30px;
+  border: none;
+  background: #a5c926;
+  border-radius: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+}
+
+main section.section-11 button:hover, footer.footer div.min-footer section.section-11 button:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 1px 2px 15px rgba(160, 160, 160, 0.3);
+          box-shadow: 1px 2px 15px rgba(160, 160, 160, 0.3);
+  cursor: pointer;
+}
+
+/* ****************** FOOTER ************* */
+footer.footer {
+  background: #a5c926;
+  width: 100%;
+  /*  ***************  THE END OF FOOTER ********************* */
+}
+
+footer.footer div.min-footer {
+  background: #a5c926;
+  margin-top: 6rem;
+  height: 209px;
+}
+
+footer.footer div.min-footer div.div-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+
+footer.footer div.min-footer div.div-1 h2 {
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+footer.footer div.min-footer div.div-1 div:nth-child(2) a {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+footer.footer div.min-footer div.div-1 div:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+
+footer.footer div.min-footer div.div-1 div:nth-child(3) a img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 20px;
+  padding: 5px;
+}
+
+footer.footer div.min-footer div.div-1 div:nth-child(3) a img:hover {
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+footer.footer div.min-footer div.div-2 {
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  margin-top: 30px;
+}
+
+footer.footer div.min-footer div.div-3 {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+footer.footer div.min-footer div.div-3 p:nth-child(2) {
+  margin-left: auto;
+}
+
+footer.footer div.min-footer div.div-3 a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=index.css.map */

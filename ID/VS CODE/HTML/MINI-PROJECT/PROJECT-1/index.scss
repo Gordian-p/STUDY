@@ -1,0 +1,46 @@
+body,html{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image:linear-gradient(80deg,orangered,orange);
+
+}
+input{
+   width: 20px;
+   padding: 20px 20px;
+   background: black;
+   outline: none;
+   color: white;
+   border: none;
+   border-radius: 30px;
+   transition: 0.5s;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, .6);
+}
+span{
+    position: relative;
+    right: 50px;
+    color: orangered;
+    background: black;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+div:hover{
+    cursor: pointer;
+}
+div:hover > input{
+     width: 300px;
+     background: rgba(0 , 0 , 0 , .8);
+}
+div:hover > span{
+    background: white;
+}

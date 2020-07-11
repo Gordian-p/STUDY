@@ -1,0 +1,18 @@
+html , body{
+    height:  100%;
+}
+body{
+  background: grey;
+  font-size: 30px;
+  text-align: center;
+}
+nav{
+  margin: auto;
+  border: 5px solid black;
+}
+div:nth-child(odd){
+     background: lightblue;
+}
+div:nth-child(even){
+    background: red;
+}

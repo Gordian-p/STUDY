@@ -1,0 +1,64 @@
+*, *::before, *::after {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  height: 100vh;
+}
+
+body {
+  background: #1a1919;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0px auto;
+  position: relative;
+  top: 40px;
+}
+
+.container h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.container input {
+  width: 100%;
+  padding: 7px 15px;
+}
+
+.container div:nth-child(3), .container div:nth-child(4), .container div:nth-child(5) {
+  display: none;
+}
+
+.container div:nth-child(3) p, .container div:nth-child(4) p, .container div:nth-child(5) p {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.container div:nth-child(3) h4, .container div:nth-child(4) h4, .container div:nth-child(5) h4 {
+  color: white;
+}
+
+.container div:nth-child(3) {
+  background: #1313dd;
+  padding: 13px 15px;
+}
+
+.container div:nth-child(4) {
+  background: #27d827;
+  padding: 13px 15px;
+}
+
+.container div:nth-child(5) {
+  background: #a80202;
+  padding: 13px 15px;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  body{
+     background: grey;
+  }
+</style>
+<body>
+    <h2>WELCOME TO PAGE 2:</h2>
+    <div id="result"></div>
+    <a href="index.html">Back to Form</a>
+
+    <script>
+       const resultList = document.getElementById('result');
+       new URLSearchParams(window.location.search).forEach((value,name)=>{
+          resultList.append(`${name}: ${value}`);
+          resultList.append(document.createElement('br'));
+       })
+       console.log( new URLSearchParams(window.location.search));
+    </script>
+</body>
+</html>

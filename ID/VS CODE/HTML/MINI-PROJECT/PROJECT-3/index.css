@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: grey;
+}
+.container{
+    height: 430px;
+    width: 350px;
+    margin: 40px auto;
+    padding-top: 30px;
+    background-color: white;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+/* SECTION 1 */
+.section-1{
+    width: 55%;
+    margin: 0px auto;
+    box-shadow: 2px 2px 20px rgba(255, 255, 0,.5);
+    margin-bottom: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.register{
+    border-radius: 30px;
+}
+.log-in{
+    background: linear-gradient(to right,red,orange);
+    border-radius: 30px;
+}
+.log-in,.register{
+    padding: 7px 22px;
+}
+.log-in,.register:hover{
+    cursor: pointer;
+}
+
+/* SECTION 2 */
+.section-2{
+    display: flex;
+    justify-content: center;
+}
+.section-2 i{
+    padding: 7px;
+    margin: 0px 10px;
+    background: linear-gradient(to right,red,orange);
+    border-radius: 50%;
+    color: white;
+}
+.section-2 i:nth-child(1){
+    padding: 7px 10px;
+}
+.slider{
+    border: 2px solid black;
+}
+
+/* SECTION 3 */
+.section-3{
+    width: 700px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    transition: 0.5s;
+}
+/* slider-1 */
+.slider-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    transition:  1s;
+}
+.slider-1 input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(128, 128, 128,.5);
+    width: 80%;
+    outline: none;
+    padding: 10px 0px;
+    margin: 5px 0px;
+}
+.slider-1 input::placeholder{
+    color: rgba(0, 0, 0,.5);
+}
+.check{
+   width: 80%;
+   display: flex;;
+   margin: 30px 0px;
+}
+.check p{
+    color: rgba(0, 0, 0,.5);
+}
+.check .check-box{
+    width: 30px;
+}
+.slider-1 button{
+    width: 60%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: linear-gradient(to right,red,orange);
+}
+.slider-1 button:hover{
+    cursor: pointer;
+}
+/* slider-2 */
+.slider-2{
+    background: white;
+}
+.slider-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.slider-2 input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(128, 128, 128,.5);
+    width: 80%;
+    outline: none;
+    padding: 10px 0px;
+    margin: 5px 0px;
+}
+.slider-2 input::placeholder{
+    color: rgba(0, 0, 0,.5);
+}
+.check{
+   width: 80%;
+   display: flex;
+   margin: 30px 0px;
+}
+.check p{
+    color: rgba(0, 0, 0,.5);
+}
+.check .check-box{
+    width: 30px;
+}
+.slider-2 button{
+    width: 60%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: linear-gradient(to right,red,orange);
+}
+.slider-2 button:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+html{
+  background: #fa923f;
+  padding: 10px;
+}
+body{
+  background: yellow;
+  padding: 10px;
+  margin: 0;
+  position: absolute; /* it work like a relative on his child*/
+}
+/* NOTe  */
+header{
+  background: #f073e1;
+  position: absolute;
+  left:0;
+  top: 0;
+}
+nav{
+  background: #f073e1;
+  margin: 10px;
+}
+footer{
+  background: #f073e1;
+  margin: 10px;
+}

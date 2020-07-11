@@ -1,0 +1,18 @@
+body{
+  background: #333;
+}
+
+div{
+  background: white;
+  height: 200px;
+  width: 200px;
+  transition-property: background, border-radius;
+  transition-duration: 2s,10s; /* NOTE: here it will take 2s for background to change and 10 for border-radius to change */
+  transition-delay: 1s,10s; /* NOTE: here ir will take  1s for background to start and 10s for border-radius to start*/
+
+}
+
+html:hover div{
+    background: yellow;
+    border-radius: 100%;
+}

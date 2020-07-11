@@ -1,0 +1,42 @@
+body{
+   background: linear-gradient(yellow,orange);
+   padding: 0 70px;
+}
+section{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-gap: 35px;
+   grid-template-rows:700px;
+}
+
+/* NOTE 1EM == 16PX */
+      /* --- about em ---*/
+/* FONT-SIZE IS ALWAYS LOOKING FOR THE PARENT */
+/* MARGIN , PADDING ,width AND ETC ARE ALWAYS LOOKINF FOR THE FONT-SIZE */
+
+/* ---- EM ------- */
+/* NOTe EM IN FONT SIXE ++ */
+.col--em {
+  font-size: 2rem;
+}
+.col--em > h1 {
+    margin-bottom: 1em;
+    font-size: 2.5em;
+}
+.col--em > p{
+   font-size: 1em;
+}
+
+/* ---- REM ----- */
+/*  rem are gud for fontsize */
+.col--rem {
+  font-size: 10px;
+}
+.col--rem > h1 {
+    font-size: 2.5rem;
+}
+.col--rem > p{
+
+  font-size: 1rem;
+   /* font-size: 2vw; */
+}

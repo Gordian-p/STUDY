@@ -1,0 +1,38 @@
+body,html{
+  background: lightgrey;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+
+}
+
+div{
+  height: 500px;
+  width: 700px;
+  border: 2px solid black;
+  background-image: url('../../IMAGE/1.jpg');
+
+ /* -------- BACKGRUOND REPEAT ------ */
+
+  /* background-repeat: no-repeat; */
+  /* background-repeat: repeat; */
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+
+   /* -------- BACKGRUOND SIZE ------ */
+
+  /* background-size: contain; */
+  background-size: cover;
+
+   /* -------- BACKGRUOND POSITION ------ */
+
+   /* background-position: left; */
+   /* background-position: right; */
+   /* background-position: center; */
+   /* background-position: top; */
+   /* background-position: bottom; */
+   /* background-position: top left; */
+   /* background-position: bottom left; */
+   /* background-position: bottom right; */
+
+}

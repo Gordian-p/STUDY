@@ -1,0 +1,26 @@
+body{
+   background: grey;
+}
+
+.demo-box{
+     margin:100px 10px;
+     border: 2px solid black;
+
+ }
+ .one{
+    background: #311847;;
+    height: 50px;
+ }
+ .two{
+  background: #EC4067;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+ }
+ .three{
+  background: #A01A7D;
+  height: 50px;
+ }
+ /* PADDING CREATE SPACE INSIDE SOMETHING eg in the demo-box shild*/
+ /* MARGIN CREATE SPACE OUTSIDE SOMETHING eg the demo-box*/
+ 

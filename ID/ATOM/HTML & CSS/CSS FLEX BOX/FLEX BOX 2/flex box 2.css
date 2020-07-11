@@ -1,0 +1,29 @@
+nav{
+   display:flex;
+
+}
+.home{
+
+}
+.search{
+
+}
+.logout{
+    /* margin-left: auto; */
+}
+
+/*
+nav > div{
+    flex: 1;
+
+} */
+
+
+
+/* nav > .search {
+  flex: 1;
+} */
+
+nav > .home , .logout{
+     flex: 2;
+}

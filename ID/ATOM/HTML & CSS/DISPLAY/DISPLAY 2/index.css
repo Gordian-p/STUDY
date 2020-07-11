@@ -1,0 +1,12 @@
+img{
+   height: 200px;
+   width: 200px;
+   display: block;
+   margin: 0 auto;
+}
+
+/* NOTe in display:block we can use margin: 0 auto */
+div{
+  background-color: grey;
+  /* text-align: center; */
+}

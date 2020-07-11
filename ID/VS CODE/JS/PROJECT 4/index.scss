@@ -1,0 +1,161 @@
+*,*::before,*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    background: blue;
+    position: relative;
+}
+
+
+//MAIN CONTAINER
+.main-container{
+    height: 100vh;
+    background: rgb(18, 133, 133);
+    display: grid;
+    place-items: center;
+    padding-bottom: 80px;
+}
+
+//CONCLUSITION
+.finalResult{
+    background: rgba(0, 0, 0, .9);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0px;
+    display: none;
+    
+    
+
+    div{
+        background: rgb(0, 175, 137);
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+
+        .a{
+            color: white;
+        }
+
+        button{
+            background: orange;
+            border: none;
+            padding: 5px 10px;
+            margin-top: 10px;
+            outline: none;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+// CONTAINER
+.container{
+      background: white;
+      width: 90%;
+      padding: 20px;
+     
+
+      //SECTION-1
+      .section-1{
+          p{
+              color: green;
+              font-size: 20px;
+              font-weight: bold;
+              border-bottom: 2px solid rgba(0, 0, 0, .2);
+              padding-bottom: 7px;
+          }
+      }
+
+
+      // SECTION-2
+      .section-2{
+          display: none;
+          position: relative;
+
+          .checked{
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              display: none;
+            //   background: black;
+            //   opacity: 0;
+          }
+
+          h2{
+              font-weight: lighter;
+              margin: 13px 0px;
+              width: 100%;
+          }
+          p{
+            background: grey;
+            margin-bottom: 10px;
+            padding: 10px 10px;
+            border-radius: 3px;
+            transition: background 0.8s;
+
+            &:hover{
+                cursor: pointer;
+            }
+          }
+      }
+      
+    // QUESTION-1 diplay
+    .question-box-1{
+        display: block;
+    } 
+     
+
+
+      //SECTION-3
+      .section-3{
+          button{
+              background: green;
+              border: none;
+              outline: none;
+              padding: 10px 35px;
+              border-radius: 3px;
+              margin-top: 7px;
+
+              &:hover{
+                  cursor: pointer;
+              }
+          }
+
+          .break{
+              height: 2px;
+              background:  rgba(0, 0, 0, .2);
+              margin: 10px 0px 5px 0px;
+          }
+          
+          .answers{
+              display: flex;
+
+          .circle{
+              height: 30px;
+              width: 30px;
+              background: grey;
+              display: grid;
+              place-items: center;
+              border-radius: 50%;
+              text-align: center;
+              color: white;
+          }
+          .circle + .circle{
+              margin-left: 6px;
+          }
+        }
+      }
+
+      
+}

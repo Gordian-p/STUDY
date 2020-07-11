@@ -1,0 +1,42 @@
+body{
+  color: red;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+button{
+  padding: 10px;
+}
+
+
+.error{
+   display: none;
+}
+/* NOTE: U can note write all if u want because it will just mean all if u note write it */
+@media all and (min-width: 400px){
+  body{
+    /* background: yellow; */
+    overflow-y: hidden;
+  }
+   section{
+     color: blue;
+     display: none;
+   }
+   .error{
+     /* color: red; */
+     display: initial;
+     display: flex;
+     justify-content: center;
+     height: 100vh;
+     align-items: center;
+     font-family: sans-serif;
+   }
+   .error > p{
+     text-decoration: underline;
+     margin-left: 10px;
+   }
+   span{
+     text-decoration: none;
+     font-size: 2rem;
+   }
+}

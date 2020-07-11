@@ -1,0 +1,76 @@
+*,*:before,*::after{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+body{
+  height: 100vh;
+}
+
+header{
+  background: green;
+  display: flex;
+  padding: 20px 30px;
+}
+.filter{
+   margin-left: auto;
+   width: 250px;
+   outline: none;
+   padding-left: 5px;
+}
+header h2{
+  color: white;
+}
+
+main{
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+.section-1 input[type="text"]{
+   width: 200px;
+   outline: none;
+   padding: 3px 0px;
+}
+.section-1 input[type="submit"]{
+   width: 70px;
+   outline: none;
+   padding: 6px 0px;
+   border: none;
+   background: black;
+   color: white;
+}
+.section-1 input[type="submit"]:hover{
+   cursor: pointer;
+}
+
+.section-2{
+  margin-top: 10px;
+}
+.section-2 ul{
+  list-style: none;
+  margin-top: 7px;
+}
+.section-2 ul li{
+  border: 0.1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  padding: 5px 10px;
+}
+.text{
+  width: 80%;
+}
+.delete{
+   margin-left: auto;
+   background: red;
+   color: white;
+   padding: 0px 6px;
+   height: 20px;
+   text-align: center;
+}
+.delete:hover{
+  cursor: pointer;
+}

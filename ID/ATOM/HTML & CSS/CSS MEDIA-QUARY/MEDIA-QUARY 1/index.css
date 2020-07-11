@@ -1,0 +1,67 @@
+body{
+   background: #333;
+}
+h1{
+   font-size: 4rem;
+}
+h2{
+  font-size: 2rem;
+}
+
+/* NOTE: we use and to connect ot propertie and we use (,) which stand for (or) */
+/* NOTE: u can write all or leave it and that will just mean or represent all  like in  EXMPLE 2*/
+
+/* -- Example -- 1 */
+@media all and (max-width:400px) {
+    body{
+      color: white;
+      background: orange;
+    }
+}
+
+/* -- Example -- 2 */
+@media (min-width:600px) {
+    body{
+      color: white;
+      background: orange;
+    }
+}
+
+
+/*  -- Example -- 3 */
+@media all and (max-width:400px) (min-width:600px){
+    body{
+      color: white;
+      background: orange;
+    }
+}
+
+
+
+
+               /**********  MAX-WIDTH  ********/
+
+/*            @media all and (max-width:400px) {}
+  max-width means if the [device width] is less than or equal to 400px then do{..} */
+
+
+
+               /**********  MIN-WIDTH  ********/
+
+           /* @media all and (max-width:400px) {}
+  max-width means if the [device width] is greater than or equal to 400px then do{..}  */
+
+
+
+
+             /*********  CSS3 Media Types  ********/
+            /*
+
+            VALUE           DESCRIPTION
+            -----------------------------------------------
+            all    ------>	Used for all media type devices
+            print  ------>	Used for printers
+            screen ------>	Used for computer screens, tablets, smart-phones etc.
+            speech ------>	Used for screenreaders that "reads" the page out loud
+
+            */

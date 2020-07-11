@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+     width: 100%;
+     max-width: 500px;
+     min-height: 120vh;
+     margin: 0px auto;
+     padding: 30px 10px;
+}
+
+
+/* SECTION-ONE */
+.section-one{
+     /* text-align: center; */
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap: 4px;
+}
+
+.section-one input{
+     outline: none;
+     padding: 5px 10px;
+     border: 2px solid brown;
+     color: brown;
+     grid-column: 1/3;
+}
+
+.section-one ::-webkit-input-placeholder{
+     color: brown;
+     opacity: 0.5;
+}
+
+.section-one button{
+    outline: none;
+    padding: 7px 0px;
+    border: none;
+    background: brown;
+    color: white;
+}
+.section-one button:hover{
+    cursor: pointer;
+}
+
+/* SECTION-TWO */
+.section-two{
+     padding-top: 20px;
+}
+
+.section-two .student-info p{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+.section-two .student-info p span{
+    padding: 5px 0px;
+}
+
+.section-two ul{
+    list-style: none;
+    padding-top: 10px;
+}
+
+.section-two ul .subject,.marks,.grades{
+  font-weight: bold;
+  font-size: 18px;
+}
+.section-two ul li{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+}
+.section-two ul li span{
+    border: 1px solid rgb(221, 221, 221);
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 15px;
+}
+
+.section-two .final{
+    width: 300px;
+    margin: 15px auto;
+}
+.section-two .final p{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.section-two .final p span{
+    border: 2px solid rgb(221, 221, 221);
+    text-align: center;
+    padding: 3px 0px;
+}
+.section-two .final p:nth-child(1) span{
+    border-bottom: 0px solid rgb(221, 221, 221);
+}
+.section-two .final p:nth-child(1) span:nth-child(1){
+    border-right: 0px solid rgb(221, 221, 221);
+}
+.section-two .final p:nth-child(2) span:nth-child(1){
+    border-right: 0px solid rgb(221, 221, 221);
+}

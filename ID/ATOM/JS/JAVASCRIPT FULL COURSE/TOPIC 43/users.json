@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "name": "Jane",
+    "yearOfBirth": 2000,
+    "job": "Doctor"
+  },
+  {
+    "id": 2,
+    "name": "John",
+    "yearOfBirth": 1997,
+    "job": "Designer"
+  },
+  {
+    "id": 3,
+    "name": "Mike",
+    "yearOfBirth": 2000,
+    "job": "Web-Developer"
+  }
+
+]

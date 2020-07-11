@@ -1,0 +1,33 @@
+body{
+    background:  blue;
+}
+section{
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    margin: 60px auto;
+}
+section:hover{
+    cursor: pointer;
+}
+.same{
+    height: 100%;
+    width: 100%;
+    background: red;
+}
+
+.div-two{
+    background: yellow;
+}
+
+.div-three{
+     background: green;
+}
+
+.div-four{
+     background: black;
+}
+
+.div-five{
+    background: aqua;
+}

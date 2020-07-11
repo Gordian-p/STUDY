@@ -1,0 +1,191 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ***** VARIABLE **** */
+/* *** MAPS *** */
+body {
+  background: orange;
+  font-weight: "black";
+}
+
+.container {
+  background: green;
+  color: white;
+}
+
+/* *** NESTING *** */
+/* --- EXMPLE 1 --- */
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* --- EXMPLE 2 --- */
+.main {
+  width: 80%;
+  margin: 0 auto;
+  /* NOTE this (&) symbol represent parent element */
+  /* ENTERPULATION METHOD*/
+}
+
+.main .main-paragraph {
+  color: blue;
+}
+
+.main .main-paragraph:hover {
+  color: white;
+}
+
+.main:hover {
+  background: blue;
+}
+
+/* **** FUNCTION **** */
+.last {
+  background: yellow;
+  font-size: 40px;
+}
+
+/* *****  MIXING ****  */
+/* ----- EXMPLE 1 --- */
+.div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30vh;
+  border: 2px solid black;
+}
+
+.div p {
+  width: 200px;
+}
+
+/* --- EXMPLE 2 ---- */
+.div-copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: rows;
+          flex-direction: rows;
+  height: 30vh;
+  border: 2px dotted black;
+}
+
+.div-copy p {
+  width: 200px;
+}
+
+/* ---- EXMPLE 3 ---- */
+body.theme {
+  background: #ffedcc;
+  color: black;
+}
+
+/* ---- EXMPLE 4 ---- */
+div.end {
+  background: blue;
+  color: black;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+div.end p {
+  margin: 0px 30px;
+}
+
+div.end-2 {
+  background: cyan;
+  color: black;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+div.end-2 p {
+  margin: 0px 30px;
+}
+
+div.end-2:hover {
+  background: rgba(0, 255, 255, 0.3);
+}
+
+div.end-3, div.end-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: yellow;
+  font-family: sans-serif;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+div.end-3 p, div.end-4 p {
+  margin: 0px 30px;
+}
+
+/* NOTE if u use two equal siqn == the value will be cluded with it string*/
+/*
+@mixin last ($style){
+    @if $style == 'true' {
+        background :yellow;
+        font-family: sans-serif;
+        font-size: 30px;
+    }
+    
+}
+div.end-3{
+    @include flex;
+    @include last(true);
+    margin-top: 50px;
+
+    p{
+        margin: 0px 30px;
+    }
+}
+*/
+/* ****** EXTEND ***** */
+div.end-4 {
+  background: red;
+}
+/*# sourceMappingURL=main.css.map */

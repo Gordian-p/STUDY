@@ -1,0 +1,13 @@
+.container{
+  /* width: 300px;
+  width: calc(200px + 100px);
+
+  width: calc(600px - calc(200px + 100px)); */
+}
+
+/* NOTe CALC HELP USES OF TWO UNIT */
+/* NOTe u should leave some space any operator */
+.container{
+   width: calc(100vw - 2rem); /* In this exmple help us to not use margin */
+   margin: 0 auto;
+}

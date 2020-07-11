@@ -1,0 +1,29 @@
+/* *{
+   margin: 0;
+   padding: 0;
+} */
+body{
+   background: white;
+}
+span h1{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    color:#130f40;
+}
+div{
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+    background: black;
+}
+div > img {
+   height: 100%;
+   width: 100%;
+   transition: 0.5s;
+}
+div:hover img{
+   opacity: 0.5;
+   cursor: pointer;
+   transform: scale(1.4) rotate(10deg);
+}

@@ -1,0 +1,11 @@
+body{
+   background:grey;
+   font-size: 40px;
+   text-align: center;
+}
+div:nth-child(even){
+    background: lightblue;
+}
+div:nth-child(odd){
+    background: red;
+}

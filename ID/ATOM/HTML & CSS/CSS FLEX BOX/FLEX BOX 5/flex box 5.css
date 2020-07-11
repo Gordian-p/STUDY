@@ -1,0 +1,12 @@
+/* ---  FLEX WRAP ---- */
+
+nav{
+  display: flex;
+
+  /* flex-wrap: nowrap; */
+  flex-wrap:wrap;
+  flex-wrap: wrap-reverse;
+}
+nav > div{
+     width : 300px;
+}

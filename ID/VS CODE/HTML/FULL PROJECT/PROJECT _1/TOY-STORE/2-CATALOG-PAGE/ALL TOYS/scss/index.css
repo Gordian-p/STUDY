@@ -1,0 +1,604 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: rgba(240, 240, 240, 0.5);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* ******************** HEADER ************************ */
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  margin-top: -140px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+header div.top {
+  background: #a5c926;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header div.top ul:nth-child(2) {
+  margin-left: auto;
+  margin-right: 100px;
+  padding-top: 3px;
+}
+
+header div.top ul:nth-child(2) li {
+  display: inline;
+}
+
+header div.top ul:nth-child(2) li img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 20px;
+  padding: 5px;
+}
+
+header div.top ul:nth-child(2) li img:hover {
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+header div.top ul:nth-child(1) {
+  padding: 5px 0px 5px 0;
+  margin-left: 90px;
+}
+
+header div.top ul:nth-child(1) li {
+  display: inline;
+  font-size: 12.2px;
+  color: white;
+}
+
+header div.top ul:nth-child(1) li:nth-child(1) {
+  margin-right: 7px;
+}
+
+header div.top ul:nth-child(1) li:nth-child(2) a {
+  color: white;
+}
+
+header div.nav-bar {
+  background: white;
+  padding: 8px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* ***************************  THE END OF HEADING ************************* */
+}
+
+header div.nav-bar ul li {
+  display: inline;
+}
+
+header div.nav-bar ul:nth-child(2) {
+  margin-left: auto;
+  margin-right: 100px;
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: row;
+}
+
+header div.nav-bar ul:nth-child(2) li {
+  margin-right: 5px;
+}
+
+header div.nav-bar ul:nth-child(2) li:nth-child(2) img {
+  width: 30px;
+}
+
+header div.nav-bar ul:nth-child(2) li:nth-child(3) {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #a5c926;
+  color: #a5c926;
+}
+
+header div.nav-bar ul:nth-child(2):hover {
+  cursor: pointer;
+}
+
+header div.nav-bar ul:nth-child(1) {
+  margin-left: 85px;
+}
+
+header div.nav-bar ul:nth-child(1) li + li {
+  margin-left: 3em;
+}
+
+header div.nav-bar ul:nth-child(1) li:nth-child(1) a {
+  font-size: 25px;
+}
+
+header div.nav-bar ul:nth-child(1) li:nth-child(1) a:hover {
+  cursor: default;
+}
+
+header div.nav-bar ul:nth-child(1) li:hover {
+  text-decoration: underline;
+}
+
+header div.nav-bar ul:nth-child(1) li:nth-child(1):hover {
+  text-decoration: none;
+}
+
+/* ************************** MAIN ********************** */
+main, footer.footer div.min-footer {
+  margin: 0px 100px;
+  /*  ***************  THE END OF THE MAIN BODY ********************* */
+}
+
+main section.section-1, footer.footer div.min-footer section.section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #dddcdc;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 140px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: #959494;
+  font-size: 15px;
+}
+
+main section.section-1 P:nth-child(2), footer.footer div.min-footer section.section-1 P:nth-child(2), main section.section-1 P:nth-child(3), footer.footer div.min-footer section.section-1 P:nth-child(3) {
+  margin-left: 10px;
+}
+
+main section.section-1 a, footer.footer div.min-footer section.section-1 a {
+  color: #959494;
+}
+
+main section.section-1 a:hover, footer.footer div.min-footer section.section-1 a:hover {
+  text-decoration: underline;
+}
+
+main section.section-2 div.div-1, footer.footer div.min-footer section.section-2 div.div-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 6rem;
+}
+
+main section.section-2 div.div-1 a, footer.footer div.min-footer section.section-2 div.div-1 a {
+  font-size: 13px;
+}
+
+main section.section-2 div.div-1 a:nth-child(2), footer.footer div.min-footer section.section-2 div.div-1 a:nth-child(2) {
+  margin-left: auto;
+  background: #a5c926;
+  padding: 0px 20px;
+  border-radius: 30px;
+}
+
+main section.section-2 div.div-1 a:nth-child(2), footer.footer div.min-footer section.section-2 div.div-1 a:nth-child(2), main section.section-2 div.div-1 a:nth-child(3), footer.footer div.min-footer section.section-2 div.div-1 a:nth-child(3) {
+  margin-right: 20px;
+  padding-top: 8px;
+}
+
+main section.section-2 div.div-1 a:nth-child(4), footer.footer div.min-footer section.section-2 div.div-1 a:nth-child(4) {
+  padding-top: 8px;
+}
+
+main section.section-2 div.div-1 a.hover:hover, footer.footer div.min-footer section.section-2 div.div-1 a.hover:hover {
+  text-decoration: underline;
+}
+
+main section.section-2 div.div-1 h2, footer.footer div.min-footer section.section-2 div.div-1 h2 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+main section.section-2 div.div-2, footer.footer div.min-footer section.section-2 div.div-2 {
+  width: 100%;
+  height: 3px;
+  background: rgba(158, 158, 158, 0.3);
+  margin-top: 1.7rem;
+  border-radius: 5px;
+}
+
+main section.section-2 div.div-2 div, footer.footer div.min-footer section.section-2 div.div-2 div {
+  width: 10%;
+  height: 3px;
+  background: #a5c926;
+}
+
+main section.section-2 div.div-3, footer.footer div.min-footer section.section-2 div.div-3 {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  grid-auto-rows: 390px;
+}
+
+main section.section-2 div.div-3 a, footer.footer div.min-footer section.section-2 div.div-3 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.7rem;
+  border: 2px solid black;
+  background: #ffffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid rgba(214, 214, 214, 0.5);
+  border-radius: 20px;
+}
+
+main section.section-2 div.div-3 a:hover, footer.footer div.min-footer section.section-2 div.div-3 a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 5px 5px 15px rgba(189, 189, 189, 0.3);
+          box-shadow: 5px 5px 15px rgba(189, 189, 189, 0.3);
+}
+
+main section.section-2 div.div-3 div.img-box, footer.footer div.min-footer section.section-2 div.div-3 div.img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+}
+
+main section.section-2 div.div-3 div.img-box div.img, footer.footer div.min-footer section.section-2 div.div-3 div.img-box div.img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+main section.section-2 div.div-3 div.img-box div.img img, footer.footer div.min-footer section.section-2 div.div-3 div.img-box div.img img {
+  height: 100%;
+  width: 100%;
+}
+
+main section.section-2 div.div-3 div.img-box p, footer.footer div.min-footer section.section-2 div.div-3 div.img-box p {
+  margin-bottom: 15px;
+}
+
+main section.section-2 div.div-3 div.img-box button, footer.footer div.min-footer section.section-2 div.div-3 div.img-box button {
+  border: none;
+  background-color: #a5c926;
+  padding: 5px 6px;
+  border-radius: 15px;
+  color: white;
+  outline: none;
+}
+
+main section.section-2 div.div-3 div.img-box button:hover, footer.footer div.min-footer section.section-2 div.div-3 div.img-box button:hover {
+  cursor: pointer;
+}
+
+main section.section-3, footer.footer div.min-footer section.section-3 {
+  margin-top: 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  background: white;
+  height: 170px;
+  border-radius: 30px;
+}
+
+main section.section-3 div:nth-child(1), footer.footer div.min-footer section.section-3 div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: row;
+}
+
+main section.section-3 div:nth-child(1) div, footer.footer div.min-footer section.section-3 div:nth-child(1) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 70px;
+  width: 70px;
+  background: #a5c926;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+main section.section-3 div:nth-child(1) p, footer.footer div.min-footer section.section-3 div:nth-child(1) p {
+  font-size: 28px;
+  font-weight: lighter;
+  padding-left: 40px;
+}
+
+main section.section-3 div:nth-child(2), footer.footer div.min-footer section.section-3 div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: row;
+}
+
+main section.section-3 div:nth-child(2) input[type="text"], footer.footer div.min-footer section.section-3 div:nth-child(2) input[type="text"] {
+  padding: 10px 3.5rem;
+  border-radius: 30px;
+  outline: none;
+  border: 2px solid rgba(216, 212, 212, 0.3);
+  font-size: 20px;
+  background: rgba(200, 194, 194, 0.1);
+}
+
+main section.section-3 div:nth-child(2) input[type="text"]:focus, footer.footer div.min-footer section.section-3 div:nth-child(2) input[type="text"]:focus {
+  border: 2px solid #a5c926;
+  background: none;
+}
+
+main section.section-3 div:nth-child(2) button, footer.footer div.min-footer section.section-3 div:nth-child(2) button {
+  font-size: 20px;
+  padding: 14px 1.5rem;
+  margin-left: 20px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: #a5c926;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+}
+
+main section.section-3 div:nth-child(2) button:hover, footer.footer div.min-footer section.section-3 div:nth-child(2) button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 2px 1px 10px rgba(85, 82, 82, 0.2);
+          box-shadow: 2px 1px 10px rgba(85, 82, 82, 0.2);
+}
+
+main section.section-4, footer.footer div.min-footer section.section-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 6rem;
+}
+
+main section.section-4 p, footer.footer div.min-footer section.section-4 p {
+  color: #a5c926;
+  margin-bottom: 10px;
+}
+
+main section.section-4 h2, footer.footer div.min-footer section.section-4 h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+main section.section-5, footer.footer div.min-footer section.section-5 {
+  margin-top: 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+}
+
+main section.section-5 div img, footer.footer div.min-footer section.section-5 div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main section.section-5 div img:hover, footer.footer div.min-footer section.section-5 div img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 1px 2px 15px rgba(160, 160, 160, 0.3);
+          box-shadow: 1px 2px 15px rgba(160, 160, 160, 0.3);
+  cursor: pointer;
+}
+
+main section.section-6, footer.footer div.min-footer section.section-6 {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.section-6 button, footer.footer div.min-footer section.section-6 button {
+  padding: 17px 30px;
+  border: none;
+  background: #a5c926;
+  border-radius: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main section.section-6 button:hover, footer.footer div.min-footer section.section-6 button:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 1px 2px 15px rgba(160, 160, 160, 0.3);
+          box-shadow: 1px 2px 15px rgba(160, 160, 160, 0.3);
+  cursor: pointer;
+}
+
+/* ****************** FOOTER ************* */
+footer.footer {
+  background: #a5c926;
+  width: 100%;
+  /*  ***************  THE END OF FOOTER ********************* */
+}
+
+footer.footer div.min-footer {
+  background: #a5c926;
+  margin-top: 6rem;
+  height: 209px;
+}
+
+footer.footer div.min-footer div.div-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+
+footer.footer div.min-footer div.div-1 h2 {
+  color: white;
+  font-weight: lighter;
+}
+
+footer.footer div.min-footer div.div-1 div:nth-child(2) a {
+  color: white;
+  margin: 0px 10px;
+}
+
+footer.footer div.min-footer div.div-1 div:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+
+footer.footer div.min-footer div.div-1 div:nth-child(3) a img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 20px;
+  padding: 5px;
+}
+
+footer.footer div.min-footer div.div-1 div:nth-child(3) a img:hover {
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+footer.footer div.min-footer div.div-2 {
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  margin-top: 30px;
+}
+
+footer.footer div.min-footer div.div-3 {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  color: white;
+}
+
+footer.footer div.min-footer div.div-3 p:nth-child(2) {
+  margin-left: auto;
+}
+
+footer.footer div.min-footer div.div-3 a {
+  color: white;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=index.css.map */

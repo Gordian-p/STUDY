@@ -1,0 +1,34 @@
+body{
+   background: yellow;
+}
+section{
+       margin: 30px 100px;
+}
+a{
+  text-decoration: none;
+  background: black;
+  color: white;
+
+ /* -- margin -- */
+  margin: 2rem;
+  margin: 2em;
+}
+
+/* -- NOTe em keep padding propertion to it font-sze --*/
+/* NOTe use rem in margin because it is not propertion to it font-size */
+.one{
+  padding: 1rem 3rem;
+  font-size: .5em;
+        /* OR */
+  /* font-size: .5rem; */
+}
+.two{
+  padding: 1em 3em;
+  font-size: .5em;
+        /* OR */
+  /* font-size: .5rem; */
+}
+.three{
+   padding: 1em 3em;
+   font-size: 1.5em;
+}

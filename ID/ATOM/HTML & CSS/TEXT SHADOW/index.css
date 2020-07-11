@@ -1,0 +1,13 @@
+body{
+  /* background: orange; */
+}
+h1{
+   font-family: sans-serif;
+   font-size: 50px;
+   text-align: center;
+   margin-top: 200px;
+}
+.text-shadow{
+     text-shadow: 5px 2px 1px rgba(0,0,0,.2);
+              /* left,bottom,bluer,color*/
+}

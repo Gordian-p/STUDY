@@ -1,0 +1,70 @@
+*, *::before, *::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  height: 100vh;
+}
+
+form {
+  max-width: 400px;
+  width: 100%;
+  margin: 100px auto;
+  padding: 40px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+form h2 {
+  text-align: center;
+  font-weight: 400px;
+  padding-bottom: 20px;
+}
+
+form label, form input {
+  display: block;
+}
+
+form label {
+  color: gray;
+}
+
+form input {
+  width: 100%;
+  padding: 9px;
+  margin-top: 3px;
+  outline: none;
+}
+
+form input:focus {
+  border: 2px solid #777;
+  border-radius: 3px;
+}
+
+form div {
+  margin-bottom: 25px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  background: #3498db;
+  color: white;
+  outline: none;
+}
+
+form button:hover {
+  cursor: pointer;
+}
+
+form p {
+  color: red;
+  font-size: 15px;
+  display: none;
+}
+/*# sourceMappingURL=index.css.map */

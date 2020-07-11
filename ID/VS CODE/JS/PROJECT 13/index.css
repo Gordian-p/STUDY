@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.time{
+    margin: 0px auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    font-size: 50px;
+    width: 500px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+.button button{
+    padding: 5px 10px;
+    margin: 0px 5px;
+}
+.button button:hover{
+    cursor: pointer;
+}
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+}
+.hours{
+    margin-left: 13px;
+}
+.seconds{
+    padding-right: 10px;
+}

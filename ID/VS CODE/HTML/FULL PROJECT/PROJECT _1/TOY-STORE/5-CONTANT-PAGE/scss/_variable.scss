@@ -1,0 +1,29 @@
+
+$colors: (
+   "color-1" :#a5c926,
+   "color-2" : #f5f5f5,
+   "color-3" : #ffffff,
+   "color-4" :  rgba(0, 0, 0, .2),
+   "color-5" : rgb(228, 152, 10),
+   "color-6" : rgb(207, 0, 97),
+   "color-7" : rgba(158, 158, 158,.3),
+   "color-8" : rgba(189, 189, 189,.3)
+);
+
+
+ @mixin flex (){ 
+   display : flex;
+   justify-content: center; 
+}
+
+@mixin  flex-2 {
+   display : flex;
+   justify-content: center; 
+   align-items: center;
+   flex-direction: column;
+}
+
+@function colors ($option) {
+    @return map-get($colors,$option);
+}
+

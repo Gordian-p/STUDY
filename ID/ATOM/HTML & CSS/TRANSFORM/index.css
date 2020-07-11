@@ -1,0 +1,118 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background: orange;
+  font-family: sans-serif;
+}
+div{
+  height: 200px;
+  width: 200px;
+  background: yellow;
+  margin-bottom: 2rem;
+  display: grid;
+  place-items: center;
+  transition: 1s;
+}
+div:hover{
+  cursor: pointer;
+}
+
+
+  /********************  TRANSFORM  *************************/
+
+
+/*   --- TRANSLATE  ----     */
+
+.div1:hover{
+  transform: perspective(400px) translateZ(-200px); /* NEGATIVE MEAN WILL GO BACKWARD */
+  transform: perspective(400px) translateZ(200px);  /* POSITIVE MEAN WILL GO FORWARD */
+}
+
+.div2:hover{
+   transform: perspective(400px) translateX(-200px);
+   transform: perspective(400px) translateX(200px);
+}
+
+.div3:hover{
+    transform: perspective(400px) translateY(-200px);
+    transform: perspective(400px) translateY(200px);
+}
+.general:hover{
+   transform:perspective(400px) translateX(100px)translateY(100px);
+                /* OR */
+   transform:perspective(400px) translateX(100px,100px);
+                                          /* X   ,  Y */
+  /* NOTE U CAN USE THIS IN ANY TRANSFORM PROPERTY */
+}
+
+
+
+  /*   ------ ROTATE --------  */
+
+.div4:hover{
+      transform: perspective(400px) rotateZ(90deg);
+}
+
+.div5:hover{
+     transform: perspective(400px) rotateX(180deg);
+}
+
+.div6:hover{
+      transform: perspective(400px) rotateY(90deg);
+}
+
+
+
+
+/*  -------- SCALE ---------  */
+.div7:hover{
+     transform: perspective(400px) scaleX(2);
+}
+
+.div8:hover{
+   transform: perspective(400px) scaleY(0.5);
+}
+
+.div9:hover{
+    transform: perspective(400px) scale(2); /* U SCALE BOTH X AND Y */
+}
+
+
+/*  -------  SKEW  -------*/
+
+.div10:hover{
+      transform: perspective(400px) skewX(45deg);
+}
+
+.div11:hover{
+      transform: perspective(400px) skewY(45deg);
+}
+
+
+
+ /* ------- translate3D  ----------  */
+
+ .div12:hover{
+      transform: perspective(400px) translate3d(x,y,z);
+      transform: perspective(400px) translate3d(100px,100px,100px);
+                 /* OR */
+      transform: perspective(400px) translateX(100px) translateY(100px) translateZ(100px);
+ }
+
+ /*  -------- rotate3d ------------- */
+
+.div13:hover{
+     transform: perspective(400px) rotateX(45deg) rotateY(45deg) rotateZ(45deg);
+}
+
+/*  --------- Transform-origin ----- */
+
+.div14:hover{
+    transform: perspective(400px) translateZ(100px);
+    transform-origin: center;
+    /* transform-origin: left; */
+    /* transform-origin: right; */
+    /* transform-origin: top; */
+    /* transform-origin: bottom; */
+}

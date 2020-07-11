@@ -1,0 +1,26 @@
+
+section{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-auto-rows: 300px;
+  grid-gap: 5px;
+}
+.box{
+   border: 2px solid black;
+   position: relative;
+   background: lightgrey;
+}
+.img-container{
+   position: absolute;
+   height: 70%;
+   width: 100%;
+}
+img{
+   height: 100%;
+   width: 100%;
+   box-sizing: border-box;
+   padding: 10px 10px 0 10px;
+}
+p{
+   padding: 0 10px;
+}

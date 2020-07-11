@@ -1,0 +1,18 @@
+body{
+  background: rgb(5, 7, 34);
+  color: white;
+  font-family: sans-serif;
+  margin: 0px 20px;
+  text-align: justify;
+  font-size: 20px;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: grey;
+}
+::-webkit-scrollbar-thumb{
+   background: linear-gradient(rgb(5, 110, 53),rgb(49, 245, 63));
+   border-radius: 5px;
+}

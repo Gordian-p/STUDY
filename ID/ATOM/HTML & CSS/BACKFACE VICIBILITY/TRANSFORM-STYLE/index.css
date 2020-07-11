@@ -1,0 +1,40 @@
+body{
+  background: grey;
+  margin: 50px 30rem;
+}
+
+.box > div:nth-child(1){
+   background: black;
+   transform: translateZ(-400px);
+}
+.box > div:nth-child(2){
+   background: green;
+   transform: translateZ(-200px);
+   /* height: 130%; */
+}
+.box > div:nth-child(3){
+   background: yellow;
+    /* backface-visibility: hidden;   /* NOTE */ */
+}
+
+.one,.two,.three{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+}
+.box{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transition: 1s;
+  transform-style: preserve-3d; /* NOTE the transform-style is applyed on 1 , 2 ,3 parent
+  /* transform: rotateY(90deg); */
+}
+html:hover .box{
+   transform: rotateY(180deg);
+}
+section{
+    perspective: 700px;
+    border: 30px solid black;
+    /* perspective-origin: 100px; */
+}

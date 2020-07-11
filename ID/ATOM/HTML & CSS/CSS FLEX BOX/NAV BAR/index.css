@@ -1,0 +1,20 @@
+body{
+  background-color: grey;
+}
+nav{
+   border: 5px solid black;
+   display: flex;
+   background: lightblue;
+   /* justify-content: space-around; */
+   padding: 5px 0;
+}
+input{
+    background: none;
+    border: none;
+    border-bottom: 0.2px solid black;
+    flex: 1;
+    outline:none;
+}
+div ,input{
+   margin: 0 4px;
+}

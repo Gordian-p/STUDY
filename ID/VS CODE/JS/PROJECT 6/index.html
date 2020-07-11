@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+        <form>
+          <h2>Register With Us</h2>
+          <div class="username">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username" required>
+            <p class="username">username must be at least 3 character</p>
+          </div>
+          <div class="email">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email" required> 
+            <p class="email">Email is not valid</p>
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <input type="text" id="password" placeholder="Enter password" required>
+            <p class="password">Password must be at least 6 characters</p>     
+          </div>
+          <div class="confirmPassword">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="text" id="confirmPassword" placeholder="Enter password again" required>
+            <p class="confirm-password">password2 is required</p>  
+          </div>
+          <button>Submit</button>
+        </form>
+
+</body>
+<script src="app.js"></script>
+</html>

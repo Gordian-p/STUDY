@@ -1,0 +1,59 @@
+@import 'media-quary.scss';
+
+$color-1 : red;
+$color-2 : green;
+$color-3 : blue;
+$color-4 : #ffffff;
+
+@mixin flex ($direction){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: $direction;
+}
+*{
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: linear-gradient(to top left,$color-1 ,$color-3);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    @include flex (row);
+}
+
+div{
+    @include flex (column);
+    height: 500px;
+    width: 300px;
+    background: $color-4;
+
+    
+    input[type="text"], input[type="password"]{
+          margin-top: 30px;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid rgb(206, 204, 204);
+    }
+    button{
+        margin-top: 30px;
+        padding: 3px 60px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+    
+    @include responsive (tab){
+        background: yellow;
+  }
+    @include responsive (phone){
+          background: orange;
+    }
+}
+
+$color : yellow;
+$color2 : blue;

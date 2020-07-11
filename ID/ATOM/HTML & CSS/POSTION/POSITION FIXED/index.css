@@ -1,0 +1,26 @@
+html{
+  background: #fa923f;
+  padding: 10px;
+  height: 150vh;
+}
+body{
+  background: yellow;
+  padding: 10px;
+  margin: 0;
+}
+/* -- FIXED --- */
+header{
+  background: #f073e1;
+  margin: 10px;
+  position: fixed;
+  top:-10px;
+  left: 0;
+}
+nav{
+  background: #f073e1;
+  margin: 10px;
+}
+footer{
+  background: #f073e1;
+  margin: 10px;
+}

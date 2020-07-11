@@ -1,0 +1,22 @@
+nav{
+   display: flex;
+   height: 100%;
+   flex-direction: column; /* vice versa*/
+   justify-content: center;
+
+   align-items: flex-end;
+   justify-content: space-around;
+}
+/* .home{
+   align-self: flex-start;
+}
+.search{
+   align-self: center;
+}
+.logout{
+   align-self: flex-end;
+} */
+
+div{
+   transform:rotate(90deg);
+}

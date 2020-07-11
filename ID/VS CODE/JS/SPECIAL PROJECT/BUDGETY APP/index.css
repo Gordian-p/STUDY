@@ -1,0 +1,319 @@
+*, *::before, *::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.section-one {
+  background-image: url(IMG/img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.section-one .background {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-one .background .budjet {
+  width: 100%;
+  max-width: 360px;
+}
+
+.section-one .background .budjet p:nth-child(1) {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.section-one .background .budjet h2 {
+  text-align: center;
+  color: white;
+  margin: 10px 0px 20px 0px;
+  font-weight: lighter;
+  font-size: 35px;
+}
+
+.section-one .background .budjet h2 .total {
+  padding-left: 5px;
+}
+
+.section-one .background .budjet p:nth-child(3) {
+  background: lightseagreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 70px 10px 15px;
+  margin: 10px 0px;
+}
+
+.section-one .background .budjet p:nth-child(3) .income-number {
+  color: white;
+}
+
+.section-one .background .budjet p:nth-child(4) {
+  background: #e03131;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px 10px 15px;
+}
+
+.section-one .background .budjet p:nth-child(4) .expenses-number {
+  margin-left: auto;
+  padding-right: 14px;
+  color: white;
+}
+
+.section-one .background .budjet p:nth-child(4) .total-percentage {
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.section-two {
+  background: rgba(128, 128, 128, 0.2);
+  padding: 10px 0px;
+}
+
+.section-two .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.section-two .description * {
+  margin: 0px 5px;
+}
+
+.section-two .description select {
+  padding: 5px 7px;
+  border: none;
+  background-color: white;
+  outline: none;
+  border-radius: 3px;
+}
+
+.section-two .description input:nth-child(2) {
+  padding: 11px 10px;
+  border: 2px solid rgba(128, 128, 128, 0.2);
+  outline: none;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.section-two .description input:nth-child(3) {
+  padding: 6px 7px;
+  border: 2px solid rgba(128, 128, 128, 0.2);
+  outline: none;
+  width: 90px;
+  border-radius: 3px;
+}
+
+.section-two .description .add-Btn {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.section-two .description .add-Btn img {
+  width: 35px;
+  height: 35px;
+}
+
+.section-two .description .add-Btn:hover {
+  cursor: pointer;
+}
+
+.section-three {
+  width: 100%;
+}
+
+.section-three .container {
+  width: 70%;
+  margin: 50px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.section-three .container .income-list .p-income {
+  color: #20b2aa;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+.section-three .container .income-list #income {
+  list-style: none;
+}
+
+.section-three .container .income-list #income .li-income {
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 7px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.section-three .container .income-list #income .li-income #income-item {
+  color: black;
+}
+
+.section-three .container .income-list #income .li-income #income-price {
+  margin-left: auto;
+  color: lightseagreen;
+  position: relative;
+  left: 17px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section-three .container .income-list #income .li-income #income-close {
+  border: 1px solid lightseagreen;
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  text-align: center;
+  position: relative;
+  left: 27px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section-three .container .income-list #income .li-income #income-close span {
+  color: lightseagreen;
+  position: relative;
+  top: -1px;
+}
+
+.section-three .container .income-list #income .li-income #income-close:hover {
+  cursor: pointer;
+}
+
+.section-three .container .income-list #income .li-income:hover #income-price {
+  left: -20px;
+}
+
+.section-three .container .income-list #income .li-income:hover #income-close {
+  left: 0;
+}
+
+.section-three .container .expenses-list .p-expenses {
+  color: #e03131;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+.section-three .container .expenses-list #expenses {
+  list-style: none;
+}
+
+.section-three .container .expenses-list .li-expenses {
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 7px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.section-three .container .expenses-list #expenses-price {
+  margin-left: auto;
+  color: #e03131;
+  position: relative;
+  left: 17px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  left: 27px;
+  transition: 0.5s;
+}
+
+.section-three .container .expenses-list #expenses-percent {
+  margin-left: 10px;
+  color: #e03131;
+  background: rgba(224, 49, 49, 0.2);
+  border-radius: 3px;
+  font-size: 12px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  left: 27px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section-three .container .expenses-list #expenses-close {
+  border: 1px solid #e03131;
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 10px;
+  position: relative;
+  left: 27px;
+}
+
+.section-three .container .expenses-list #expenses-close span {
+  color: #e03131;
+  position: relative;
+  top: -1px;
+}
+
+.section-three .container .expenses-list #expenses-close:hover {
+  cursor: pointer;
+}
+
+.section-three .container .expenses-list:hover #expenses-price {
+  left: 0px;
+}
+
+.section-three .container .expenses-list:hover #expenses-percent {
+  left: 0px;
+}
+
+.section-three .container .expenses-list:hover #expenses-close {
+  left: 0px;
+}
+/*# sourceMappingURL=index.css.map */

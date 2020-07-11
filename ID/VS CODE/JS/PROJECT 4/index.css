@@ -1,0 +1,147 @@
+*, *::before, *::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: blue;
+  position: relative;
+}
+
+.main-container {
+  height: 100vh;
+  background: #128585;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding-bottom: 80px;
+}
+
+.finalResult {
+  background: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 0px;
+  display: none;
+}
+
+.finalResult div {
+  background: #00af89;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.finalResult div .a {
+  color: white;
+}
+
+.finalResult div button {
+  background: orange;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  outline: none;
+}
+
+.finalResult div button:hover {
+  cursor: pointer;
+}
+
+.container {
+  background: white;
+  width: 90%;
+  padding: 20px;
+}
+
+.container .section-1 p {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 7px;
+}
+
+.container .section-2 {
+  display: none;
+  position: relative;
+}
+
+.container .section-2 .checked {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+
+.container .section-2 h2 {
+  font-weight: lighter;
+  margin: 13px 0px;
+  width: 100%;
+}
+
+.container .section-2 p {
+  background: grey;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  border-radius: 3px;
+  -webkit-transition: background 0.8s;
+  transition: background 0.8s;
+}
+
+.container .section-2 p:hover {
+  cursor: pointer;
+}
+
+.container .question-box-1 {
+  display: block;
+}
+
+.container .section-3 button {
+  background: green;
+  border: none;
+  outline: none;
+  padding: 10px 35px;
+  border-radius: 3px;
+  margin-top: 7px;
+}
+
+.container .section-3 button:hover {
+  cursor: pointer;
+}
+
+.container .section-3 .break {
+  height: 2px;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 10px 0px 5px 0px;
+}
+
+.container .section-3 .answers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .section-3 .answers .circle {
+  height: 30px;
+  width: 30px;
+  background: grey;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}
+
+.container .section-3 .answers .circle + .circle {
+  margin-left: 6px;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,17 @@
+/*  --- ORDER PROPERTY ---- */
+nav{
+    display:flex;
+}
+.item2{
+    order: 0; /* IT WILL PLACE AT IT ORIGINAL PLACE */
+    order:1;  /* IT WILL PLACE AT THE END IT CAN BE 1 2 3 OR 10 DOESNT MATTER*/
+    order: -1; /* IT WILL PLACE AT THE BEGINING */
+
+    order:0;
+}
+.item1{
+  order: 1;
+}
+.item3{
+   order: -1;
+}

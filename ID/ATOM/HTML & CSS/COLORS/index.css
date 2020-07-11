@@ -1,0 +1,64 @@
+body{
+  background: lightblue;
+  font-family: sans-serif;
+}
+h1{
+  color: blue;
+  font-size: 40px;
+}
+section{
+  display: grid;
+  grid-template-columns: repeat(5,100px);
+  grid-gap: 5px;
+}
+.box{
+  background: yellow;
+  height: 100px;
+  width: 100px;
+}
+
+
+.box1{
+   background: pink;
+}
+
+.box2{
+  /* NOTe all latter small or capital are equal */
+  /* NOTe if you see alot of number it will be black and alot of latter it will be bright */
+  /* background: red; */
+  background: #FF0000; /* #FF0000 collesponding to #RRGGBB ,  a-->f 1 --> 9*/
+}
+.box3{
+  /* background: firebrick; */
+  background-color:148, 43, 27 ; /* scale 0 --> 255 */;
+  background: rgba(148, 43, 27,.4); /* (a) stand for alpha; */
+
+
+  /*background: rgb(0,0,0); */  /* BLACK */
+  /*background: rgb(255,255,255);*/  /* WHITE */
+}
+
+
+.box4{
+   background: orange;
+}
+.box5{
+  background: yellow;
+  grid-column: 1/2;
+}
+.box6{
+   /* background: lime; */
+            /* degree(360) ,saturation ,lightness or darkel (0 --> 100)*/
+   background: hsl(131,20%,100%);
+   background: hsla(131,20%,0%,.3);
+}
+.box7{
+   background: green;
+}
+.box8{
+   background: blue;
+}
+.box9{
+    /* background: purple; */
+   background: rgba(123,0,114);
+}

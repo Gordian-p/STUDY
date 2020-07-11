@@ -1,0 +1,64 @@
+body{
+  background: yellow;
+}
+header{
+  background: pink;
+}
+nav{
+  background: pink;
+}
+main{
+  background-color: #f073e1;
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+header,nav,main{
+   margin-bottom: 1rem;
+}
+
+  /*NOTe with block element we can change the width and height of the elment */
+/* div{
+  background: red;
+  margin: 0 3rem 10px 3rem;
+  display: block;
+  width: 200px;
+  height: 290px;
+} */
+
+
+/* NOTe display inline it ignore the height the width so u can use padding */
+/* div{
+  background: red;
+  margin: 0 3rem 10px 3rem;
+  display: inline;
+  padding: 10px 30px;
+} */
+
+/* NOTe display inline-block it help us to apply width and heigt in an inline elment */
+
+div{
+  background: red;
+  margin: 0 3rem 10px 3rem;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+/*     ---- NOTe text align it align it child node
+        example
+
+        <ul>
+           <li></li>
+           <li></li>
+        <ul>
+
+      **  here it will align the list into center position by applying text align to it parent which is UL **
+
+
+        <section>
+           <div></div>
+           <div></div>
+        </section>
+
+
+    **  here it will align the div into center position by applying text align to it parent which is section **
+ */

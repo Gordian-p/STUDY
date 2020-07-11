@@ -1,0 +1,94 @@
+body,html{
+  background: grey;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  place-items: center;
+}
+.img{
+  height: 500px;
+  width: 600px;
+}
+img{
+  height: 100%;
+  width: 100%;
+}
+
+/*
+      let lenght = px , in;
+      let # = number;
+      let % = percentage;
+
+      blur (length);
+      brightness(# or %)
+      contrast(# or %)
+      grayscale(# or %)
+      invert(# or %)
+      opacity(# or #)
+      saturate(# or %)
+      sepia(# or %)
+      hue-rotate(angle)
+      drop-shadow(same-as-box-shadow)
+*/
+
+
+.filter{
+
+   /* filter: blur(2px); */
+   /* filter:blur(0.05in); */
+
+
+    /* NOTE: 0 being compliting black and 100 being compliting blight */
+   /* filter: brightness(0); */
+   /* filter: brightness(100); */
+   /* ------------------------ */
+   /* filter: brightness(0.4); */
+   filter: brightness(1); /* initial color */
+   /* filter: brightness(2); */
+   /* NOTE: in % from 100% - 0% will decrease the brightness and from 100% to infinte will incease a brightness */
+   /* filter: brightness(50%); */
+   /* filter: brightness(140%); */
+
+
+   /* filter: contrast(0%); */
+   /* filter: contrast(30%); */
+   /* filter: contrast(190%); */
+
+
+  /* NOTE: grey-scale will desaturate the color */
+  /* NOTE: it from 0% on which it is it original and start to desaturate as u increase a percentage */
+  /* filter: grayscale(0%); */
+  /* filter: grayscale(100%); */
+
+
+    /* NOTE: the furher u go the more greylish color*/
+   /* filter: invert(30%); */
+   /* filter: invert(50%); */
+   /* filter: invert(100%); */
+
+
+   /* filter: opacity(30%); */
+   /* filter: opacity(100%); */
+
+
+
+   /* filter: saturate(0%); */
+   /* filter: saturate(100%); */
+   /* filter: saturate(140%); */
+
+
+   /* NOTE: old time story pic */
+   /* filter: sepia(0%); */
+   /* filter: sepia(100%); */
+
+
+   /* filter: hue-rotate(0deg); */
+   /* filter: hue-rotate(100deg); */
+
+
+
+
+   /* filter: contrast(140%) saturate(130%) blur(1.3px); */
+
+}
